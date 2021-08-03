@@ -71,6 +71,32 @@
     </table>
     <div>ToTal Price:{{$totalPrice}}</div>
 </div>
+<div class="row mt-3 d-flex justify-content-end">
+    <form action="/save" class="col-6" method="post">
+        @csrf
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="text" name="shipName" class="form-control" placeholder="Enter name ">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="text" name="shipPhone" class="form-control" placeholder="Enter Phone">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="text" name="shipAddress" class="form-control" placeholder="Enter address">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="text" name="note" class="form-control" placeholder="Enter Note">
+            </div>
+        </div>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</div>
 </body>
 </html>
 
